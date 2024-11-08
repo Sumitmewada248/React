@@ -1,35 +1,86 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+// const data=name.map((key)=><li>{key}</li>)
 
-function App() {
-  const [count, setCount] = useState(0)
+// const App=()=>{
+//     const name=["Ram","Aditya","Pawan","Danish","Sumit","Shubham"];
+//     const data=name.map((key)=>{
+//         return(
+//             <>
+//             {/* <h1>{key}</h1> */}
+//             {/* <li>{key}</li>     */}    
+//             <option>{key}</option>    
+//             </>
+//         )
+        
+//     })
+//     return(
+//         <>
+//         {/* {data} */}
+//         <h1>Welcome</h1>
+//         {/* <ol> */}
+//             {/* {data} */}
+//         {/* </ol> */}
 
-  return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+//         <select>
+//             {data}
+//         </select>
+//         </>
+//     )
+   
+// }
+// export default App;
+
+
+const student=[
+  {
+      "rollno":121,
+      "name":"Ram",
+      "city":"bhopal"
+  },
+  {
+      "rollno":122,
+      "name":"Aditya",
+      "city":"ujjain"
+  },
+  {
+      "rollno":123,
+      "name":"Ankur",
+      "city":"bhopal"
+  },
+  {
+      "rollno":124,
+      "name":"Ashish",
+      "city":"Up"
+  },
+  {
+      "rollno":125,
+      "name":"Sumit",
+      "city":"indore"
+  }
+]
+
+const data=student.map((key)=>{
+  return(
+      <>
+          <tr>
+              <td>{key.rollno}</td>
+              <td>{key.name}</td>
+              <td>{key.city}</td>
+          </tr>
+      </>
   )
+})
+const App=()=>{
+      return(
+          <>
+          <table width="50%" border="2">
+              <tr>
+                  <th>Roll No</th>
+                  <th>Name</th>
+                  <th>City</th>
+              </tr>
+              {data}
+          </table>
+          </>
+      )
 }
-
-export default App
+export default App;
