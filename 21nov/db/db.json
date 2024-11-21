@@ -1,50 +1,53 @@
 {
-    "student":[
-     {
-        "rollno":123,
-        "name":"sumit",
-        "city":"bhopal",
-        "fees":54000
-
-     },
-     {
-        "rollno":123,
-        "name":"sumit",
-        "city":"bhopal",
-        "fees":54000
-
-     },
-     {
-        "rollno":123,
-        "name":"sumit",
-        "city":"bhopal",
-        "fees":54000
-
-     },
-     {
-        "rollno":123,
-        "name":"sumit",
-        "city":"bhopal",
-        "fees":54000
-
-     },
-     {
-        "rollno":123,
-        "name":"sumit",
-        "city":"bhopal",
-        "fees":54000
-
-     },
-     {
-        "rollno":123,
-        "name":"sumit",
-        "city":"bhopal",
-        "fees":54000
-
-     }
-
-
-
-
-    ]
-}    
+  "student": [
+    {
+      "rollno": 123,
+      "name": "sumit",
+      "city": "bhopal",
+      "fees": 54000,
+      "id": "f83f"
+    },
+    {
+      "rollno": 123,
+      "name": "sumit",
+      "city": "bhopal",
+      "fees": 54000,
+      "id": "7839"
+    },
+    {
+      "rollno": 123,
+      "name": "sumit",
+      "city": "bhopal",
+      "fees": 54000,
+      "id": "6398"
+    },
+    {
+      "rollno": 123,
+      "name": "sumit",
+      "city": "bhopal",
+      "fees": 54000,
+      "id": "6435"
+    },
+    {
+      "rollno": 123,
+      "name": "sumit",
+      "city": "bhopal",
+      "fees": 54000,
+      "id": "23e1"
+    },
+    {
+      "rollno": 123,
+      "name": "sumit",
+      "city": "bhopal",
+      "fees": 54000,
+      "id": "59c4"
+    },
+    {
+      "id": "9329",
+      "rollno": "126",
+      "name": "Sumit mewada",
+      "city": "Bhopal",
+      "fees": "21545"
+    }
+  ]
+}
