@@ -1,13 +1,19 @@
-import Bhopal from "./Bhopal"
+import {useContext} from "react";
+import { myContext } from "./UserContext";
 
-const Cybrom=()=>{
-return(
+// import Bhopal from "./Bhopal"
 
-    <>
-    <h1>This is Cybrom</h1>
-    <Bhopal/>
+ const Cybrom=()=>{
+    const {user,setUser}=useContext(myContext);
+ return(
+
+     <>
+   <h1> Welcome to Cybrom:{user}</h1>
+    <button onClick={()=>{setUser("Sumit")}}>click</button>
     </>
 )
+ }
+  export default Cybrom;
 
-}
-export default Cybrom
+
+
