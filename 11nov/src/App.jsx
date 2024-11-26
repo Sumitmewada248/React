@@ -15,7 +15,8 @@
 
 import EmpData from "./EmpData"
 import EmpDesign from "./EmpDesig"
-const ans=EmpData.map((key)=> <EmpDesign
+const ans=EmpData.map((key)=> <
+  EmpDesign
 empid={key.empno}
 empname={key.name}
 desi={key.designation}

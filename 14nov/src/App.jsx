@@ -66,15 +66,15 @@
 const App=()=>{
   
     const myval=(e)=>{
-      console.log(e);
+
       let nm=e.target.name;
       let val=e.target.value;
-      alert("Name :"+nm+"value :"+val)
+      console.log("Name: "+nm+"value :"+val);
     }
     return(
       <>
       <h1>Welcome!!</h1>
-      <button name="btn1" value="mybutton" onClick={myval}>click here</button>
+      <input type="text" name="city" onChange={myval}/>
   
       </>
     )

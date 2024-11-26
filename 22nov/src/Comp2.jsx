@@ -4,8 +4,8 @@ const Comp2=({user})=>{
     return(
         <>
      
-        <h1>Component :2</h1>
-        <Comp3 user={user}/>
+        <h1>Component :2 </h1>
+        <Comp3 />
         </>
       
     )

@@ -5,7 +5,7 @@ const Comp5=()=>{
     const {name}=useContext(myContext);
     return(
         <>
-        <h1>Comp5 name:{name}</h1>
+        <h1>Comp5  & name:{name}</h1>
         </>
     )
 }
