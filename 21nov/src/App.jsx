@@ -15,6 +15,7 @@ const App=()=>{
     <Route path="home" element={<Home/>}/>
     <Route path="insert" element={<Insert/>}/>
     <Route path="display" element={<Display/>}/>
+    
 
     
     

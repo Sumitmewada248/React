@@ -18,7 +18,7 @@ const App=()=>{
 //       </>
 
 <>
-<h1>welcom tom my App :</h1>
+<h1>welcom to my App :</h1>
 <Cybrom/>
 </>
    )

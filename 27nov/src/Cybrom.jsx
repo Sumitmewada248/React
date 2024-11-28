@@ -12,6 +12,7 @@ import { myContext } from "./UserContext";
     <button onClick ={()=>{setUser(user+1)}}>Increment</button>
     <h1>{user}</h1>
     <button onClick={()=>{setUser(user-1)}}>Decrement</button>
+    <button onClick={()=>{setUser(0)}}>Reset</button>
     </>
 )
  }
