@@ -6,7 +6,7 @@ import Navbar from 'react-bootstrap/Navbar';
 const Layout=()=>{
     return(
         <>
-          <Navbar bg="dark" data-bs-theme="dark">
+          <Navbar bg="danger" data-bs-theme="light">
         <Container>
           <Navbar.Brand href="#home">MyOnlineBooks</Navbar.Brand>
           <Nav className="me-auto">
