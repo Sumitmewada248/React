@@ -13,13 +13,11 @@
 //   )
 // }
 // export default App;
-
 // import { useState } from "react";
-
 // const App=()=>{
 //   const [color,setColor]=useState("Red");
   
-  
+
 //   return(
 //     <>
 //     <h1 style={{color:color}}>My Favourite Color: {color}</h1>
