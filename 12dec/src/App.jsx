@@ -41,8 +41,6 @@ const App=()=>{
     setBtnComp(true);
   }
 
-
-
 let sn=0;
 const ans=Data.map((key)=>{
   sn++;
@@ -52,7 +50,7 @@ const ans=Data.map((key)=>{
         <td> {sn} </td>
         <td>
           
-          
+        
           {key.status=="complete"? (<span style={{color:'red',  textDecoration:'line-through' }}>{key.work}</span>) : (key.work)}
            
            </td>
@@ -61,6 +59,8 @@ const ans=Data.map((key)=>{
           <button onClick={()=>{editTask(key.id, key.work)}}> Edit</button>
         </td>
         <td>
+
+
 
               {key.status=="uncomplete"?(
                 <>
@@ -76,6 +76,8 @@ const ans=Data.map((key)=>{
     </>
   )
 })
+
+
 
   return(
     <>

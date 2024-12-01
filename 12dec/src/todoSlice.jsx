@@ -33,6 +33,8 @@ const todoSlice= createSlice({
             }
         },
 
+
+        
         uncompleteTask:(state, actions)=>{
             for (var i=0; i<state.task.length; i++)
             {
