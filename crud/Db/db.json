@@ -1,13 +1,6 @@
 {
   "books": [
     {
-      "id": "ca71",
-      "name": "shennu",
-      "price": "1450",
-      "author_name": "sanjay",
-      "publish_year": "2050"
-    },
-    {
       "id": "bb69",
       "name": "rgpv",
       "price": "142",

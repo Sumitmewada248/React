@@ -58,4 +58,7 @@ const ans=data.map((item)=>{
         </>
     )
 }
-export default Update;
+export default Update;
+
+
+
