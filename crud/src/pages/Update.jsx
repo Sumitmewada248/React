@@ -1,64 +1,84 @@
-import { faPenToSquare } from '@fortawesome/free-solid-svg-icons';
-import { faTrash } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { useState, useEffect } from "react";
 import axios from "axios";
-import { useEffect, useState } from "react";
-import { Table } from "react-bootstrap";
+import Table from 'react-bootstrap/Table';
+import { FaEdit } from "react-icons/fa";
+import { MdDelete } from "react-icons/md";
 import { message } from "antd";
+import { useNavigate } from "react-router-dom";
+
 const Update=()=>{
-    const [data,mydata]=useState([]);
+const [mydata, setMydata]=useState([]);
+const navigate= useNavigate();
 
-    const getdata=()=>{
-        let api="http://localhost:3000/books";
-        axios.get(api).then((res)=>{
-            mydata(res.data);
-        })
-    }
-
-const ans=data.map((item)=>{
-    return(
-        <tr>
-            <td >{item.name}</td>
-            <td>{item.price}</td>
-            <td>{item.publish_year}</td>
-            <td>{item.author_name}</td>
-            <td ><FontAwesomeIcon icon={faPenToSquare} /></td>
-            <td onClick={()=>{deldata(item.id)}}><FontAwesomeIcon icon={faTrash} /></td>
-        </tr>
-    )
-})
-    useEffect(()=>{
-        getdata();
+const loadData=()=>{
+    let api="http://localhost:3000/books";
+    axios.get(api).then((res)=>{
+        setMydata(res.data);
     })
+}
+useEffect(()=>{
+    loadData();
+}, []);
+const myDel=(id)=>{
+    let api=`http://localhost:3000/books/${id}`;
+    axios.delete(api).then((res)=>{
+        message.error("Record Sjuccesfully deleted!");
+        loadData();
+    })   
     
-    const deldata=(id)=>{
-        let api=`http://localhost:3000/books/${id}`;
-        axios.delete(api).then((res)=>{
-        message.success("data deleted");
-        })
-         }
+}
 
+
+const myEdit=(id)=>{
+    navigate(`/edit/${id}`);
+}
+
+const ans=mydata.map((key)=>{
     return(
         <>
-          <Table striped style={{width:"60%", marginLeft:"180px"}}>
+          <tr>
+            <td> {key.name}</td>
+            <td> {key.price}</td>
+            <td> {key.author_name}</td>
+            <td> {key.publish_year}</td>
+            <td>
+
+          <a href="#" onClick={()=>{myEdit(key.id)}}>
+          <FaEdit />
+          </a>
+         
+
+
+        </td>
+        <td>
+            <a href="#" onClick={()=>{myDel(key.id)}}>
+            <MdDelete />
+            </a>
+            </td>
+          </tr>
+        </>
+    )
+})
+    return(
+        <>
+         <h1> Update Books</h1>
+
+         <Table striped bordered hover style={{width:"50%"}}>
       <thead>
         <tr>
-          <th>Name</th>
-          <th>Price</th>
+          <th>Book Name</th>
+          <th>Book Price</th>
+          <th>Author Name</th>
           <th>Publish Year</th>
-          <th>Author name</th>
-          <th>Edit</th>
-          <th>Delete</th>
+          <th></th>
+          <th></th>
         </tr>
       </thead>
-      <tbody >
-        {ans}
-      </tbody>
-    </Table>
+      <tbody>
+    {ans}
+        </tbody>
+        </Table>
         </>
     )
 }
 export default Update;
-
-
-
