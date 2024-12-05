@@ -10,9 +10,9 @@ const dispatch = useDispatch()
             <h1>Welcome counter 
                 Program
             </h1>
-            <button onClick={() => dispatch(increment())}> Increment</button>
+            <button onClick={() => dispatch(increment())}> INCREMENT</button>
             <h1>{myvalue}</h1>
-            <button onClick={() => dispatch(decrement())}> Decrement</button>
+            <button onClick={() => dispatch(decrement())}> DECREMENT</button>
         </>
     )   
 }
