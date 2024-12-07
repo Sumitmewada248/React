@@ -9,9 +9,10 @@ const App = () => {
 
   }
 
-  
+
   return mynum*2;
-},[mynum])
+},
+[mynum])
 
   const multi= useMemo(()=>{ 
 return count*3;
