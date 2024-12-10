@@ -52,6 +52,7 @@ const ans=Data.map((key)=>{
         <td> {sn} </td>
         <td>
           
+          
           {key.status=="complete"? (<span style={{color:'red',  textDecoration:'line-through' }}>{key.work}</span>) : (key.work)}
            
            </td>
