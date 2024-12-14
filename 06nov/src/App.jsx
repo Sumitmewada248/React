@@ -6,8 +6,6 @@ import Contact from"./contact"
 
 const App=()=>{
 
-
-
     return(
      
      <>
