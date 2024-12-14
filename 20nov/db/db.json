@@ -1,0 +1,50 @@
+{
+    "student":[
+     {
+        "rollno":123,
+        "name":"sumit",
+        "city":"bhopal",
+        "fees":54000
+
+     },
+     {
+        "rollno":123,
+        "name":"sumit",
+        "city":"bhopal",
+        "fees":54000
+
+     },
+     {
+        "rollno":123,
+        "name":"sumit",
+        "city":"bhopal",
+        "fees":54000
+
+     },
+     {
+        "rollno":123,
+        "name":"sumit",
+        "city":"bhopal",
+        "fees":54000
+
+     },
+     {
+        "rollno":123,
+        "name":"sumit",
+        "city":"bhopal",
+        "fees":54000
+
+     },
+     {
+        "rollno":123,
+        "name":"sumit",
+        "city":"bhopal",
+        "fees":54000
+
+     }
+
+
+
+
+    ]
+}    

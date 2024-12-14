@@ -1,0 +1,46 @@
+const student=[
+    {
+        "rollno":121,
+        "name":"sanjay",
+        "city":"Bhopal",
+        "fees":45000
+    },
+    {
+        "rollno":121,
+        "name":"sanjay",
+        "city":"Bhopal",
+        "fees":45000
+    },
+    {
+        "rollno":121,
+        "name":"sanjay",
+        "city":"Bhopal",
+        "fees":45000
+    },
+    {
+        "rollno":121,
+        "name":"sanjay",
+        "city":"Bhopal",
+        "fees":45000
+    },
+    {
+        "rollno":121,
+        "name":"sanjay",
+        "city":"Bhopal",
+        "fees":45000
+    },
+    {
+        "rollno":121,
+        "name":"sanjay",
+        "city":"Bhopal",
+        "fees":45000
+    },
+    {
+        "rollno":121,
+        "name":"sanjay",
+        "city":"Bhopal",
+        "fees":45000
+    },
+]
+
+export default student

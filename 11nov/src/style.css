@@ -1,0 +1,20 @@
+body{
+    background-color: skyblue;
+
+}
+#div{
+    
+    
+    display: grid;
+    grid-template-columns: auto auto auto;
+  
+}
+#pro{
+    border: 5px solid red;
+    border-radius: 30px;
+    background-color:red;
+    margin: 20px;
+    padding: 10px;
+    text-align: center;
+
+}
