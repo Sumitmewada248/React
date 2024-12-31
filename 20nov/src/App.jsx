@@ -60,8 +60,8 @@ axios.get(api).then((res)=>{
 })
 }
 
-const ans=mydata.map((key)=>{
 
+const ans=mydata.map((key)=>{
     return(
        <tr>
         <td>{key.rollno}</td>
@@ -73,8 +73,7 @@ const ans=mydata.map((key)=>{
     )
 
 })
-
-    return(
+ return(
         <>
         <h1>Display Data</h1>
         <button onClick={loadData}> Show Data</button>
