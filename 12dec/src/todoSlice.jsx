@@ -10,8 +10,7 @@ const todoSlice= createSlice({
         },
 
         deleteTask:(state, actions)=>{
-        console.log(actions.payload.id);
-        state.task=state.task.filter(key=> key.id!=actions.payload.id);
+        state.task=state.task.filter((key)=> key.id!=actions.payload.id);
         },
         
         editDataSave:(state, actions)=>{
