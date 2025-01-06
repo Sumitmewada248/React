@@ -12,12 +12,9 @@ import { myContext } from "./UserContext";
     <button onClick={()=>{setUser("Sumit")}}>click</button>
     </>
 )
-
  }
+
+
 
   export default Cybrom;
 
-
-
-
-  
