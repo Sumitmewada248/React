@@ -49,8 +49,6 @@ const ans=Data.map((key)=>{
       <tr>
         <td> {sn} </td>
         <td>
-          
-        
           {key.status=="complete"? (<span style={{color:'red',  textDecoration:'line-through' }}>{key.work}</span>) : (key.work)}
            
            </td>
@@ -59,9 +57,6 @@ const ans=Data.map((key)=>{
           <button onClick={()=>{editTask(key.id, key.work)}}> Edit</button>
         </td>
         <td>
-
-
-
               {key.status=="uncomplete"?(
                 <>
                 <button onClick={()=>{taskComp(key.id)}}> Complete </button>

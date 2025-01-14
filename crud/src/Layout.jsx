@@ -16,13 +16,16 @@ const Layout=()=>{
             <Nav.Link as={Link} to="search">Search</Nav.Link>
             <Nav.Link as={Link} to="update">Update</Nav.Link>
           </Nav>
+
+
         </Container>
       </Navbar>
 
       <Outlet/>
 
 
-      <hr size="4" color="black"/>
+
+      <hr siz e="4" color="black"/>
       www.mybookstore.com
         
         </>
