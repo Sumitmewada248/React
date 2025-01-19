@@ -8,5 +8,6 @@ const Comp5=()=>{
         <h1>Comp5 name:{name}</h1>
         </>
     )
+    
 }
 export default Comp5;

@@ -5,8 +5,6 @@ const Comp4=()=>{
         <>
         <h1>Comp4</h1>
 
-
-        
         <Comp5/>
         </>
     )
